@@ -1,11 +1,19 @@
+/* Ao clicar no menu o cabeçalho vai "desaparecer" */
 $(document).ready(function () {
   $("#menu").click(function () {
     $(this).toggleClass("fa-times");
     $("header").toggleClass("toggle");
   });
+  /* Ao mover o scroll o cabeçalho vai "desaparecer" */
   $(window).on("scroll load", function () {
-    $("#menu").removerClass("fa-times");
-    $("header").removerClass("toggle");
+    $("#menu").removeClass("fa-times");
+    $("header").removeClass("toggle");
+
+    if ($(window).scrollTop() > 0) {
+      $(".top").show();
+    } else {
+      $(".top").hide();
+    }
   });
 
   /* Rolagem suave*/

@@ -78,7 +78,7 @@ section {
     color: #1C1C1C;
 }
 
-/* Risco que esta abaixo do Sobre mim */
+/* Risco que esta abaixo dos Titulos */
 .heading {
     text-align: center;
     margin: 0 6rem;
@@ -92,6 +92,7 @@ section {
     color: var(--azul);
 }
 
+/* Cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -136,6 +137,7 @@ header .navbar ul {
     padding: 1rem 3rem;
 }
 
+/* Botões do cabeçalho */
 header .navbar ul li a {
     display: block;
     padding: 1rem;
@@ -152,6 +154,7 @@ header .navbar ul li a:hover {
     color: #1C1C1C
 }
 
+/* Menu onde abre o cabeçalho*/
 #menu {
     position: fixed;
     top: 2rem;
@@ -333,7 +336,7 @@ header .navbar ul li a:hover {
 
 
 
-/* media queries */
+/* consultas de mídia onde altera a largura quando for outros aparelhos */
 
 @media (max-width:1200px) {
     html {
@@ -345,6 +348,7 @@ header .navbar ul li a:hover {
     }
 }
 
+/* Quando o maximo da largura for 991px ele  vai "desaparecer" com o cabeçalho */
 @media (max-width:991px) {
     header {
         left: -120%;
@@ -382,7 +386,7 @@ header .navbar ul li a:hover {
     .heading {
         margin: 0 3rem;
     }
-  
+
 
     .skills-data {
         width: 150%;
