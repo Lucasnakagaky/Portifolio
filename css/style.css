@@ -2,10 +2,7 @@
 
 :root {
     --azul: #45f3ff;
-    /*
-    --azul: #45f3ff;
-     --preto: #1C1C1C;
-    */
+    --branco: #fff;
 }
 
 * {
@@ -57,11 +54,11 @@ section {
     padding: 1rem;
 }
 
-
+/* estilização dos botões */
 .btn {
     padding: .7rem 3rem;
     background: #333;
-    color: #fff;
+    color: var(--branco);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -85,7 +82,7 @@ section {
     font-size: 4rem;
     padding: 1rem;
     border-bottom: .1rem solid #fff4;
-    color: #fff;
+    color: var(--branco);
 }
 
 .heading span {
@@ -120,7 +117,7 @@ header .user img {
 
 header .user .name {
     font-size: 3.5rem;
-    color: #fff;
+    color: var(--branco);
 }
 
 header .user .post {
@@ -143,7 +140,7 @@ header .navbar ul li a {
     padding: 1rem;
     margin: 1.5rem 0;
     background: #333;
-    color: #fff;
+    color: var(--branco);
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -160,7 +157,7 @@ header .navbar ul li a:hover {
     top: 2rem;
     right: 2rem;
     background: #333;
-    color: #fff;
+    color: var(--branco);
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
@@ -168,6 +165,7 @@ header .navbar ul li a:hover {
     display: none;
 }
 
+/* Home */
 .home {
     display: flex;
     justify-content: center;
@@ -177,12 +175,12 @@ header .navbar ul li a:hover {
 
 .home h3 {
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--branco);
 }
 
 .home h1 {
     font-size: 5rem;
-    color: #fff;
+    color: var(--branco);
 }
 
 .home h1 span {
@@ -203,7 +201,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info {
-    flex: 1 1 40rem;
+    flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
@@ -222,7 +220,7 @@ header .navbar ul li a:hover {
 
 
 
-.skills-container {
+.skills .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -231,7 +229,8 @@ header .navbar ul li a:hover {
     padding-left: 3rem;
 }
 
-.skills-data {
+/* Retangulo que tem dentro as habilidades */
+.skills-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -246,13 +245,13 @@ header .navbar ul li a:hover {
     background-color: #333;
 }
 
-.skills-icon {
+.skills .row .skills-box .names .skills-icon {
     font-size: 2.3rem;
     margin-right: 1rem;
     color: var(--azul);
 }
 
-.skills-names {
+.skills .row .skills-box .names {
     display: flex;
     align-items: center;
 }
@@ -266,6 +265,7 @@ header .navbar ul li a:hover {
     padding: 2rem 0;
 }
 
+/* espesura do box que tera a imagem */
 .portfolio .box-container .box {
     height: 16rem;
     width: 22rem;
@@ -281,6 +281,7 @@ header .navbar ul li a:hover {
     object-fit: cover;
 }
 
+/* faz a imagem se mover */
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
 }
@@ -308,7 +309,7 @@ header .navbar ul li a:hover {
 
 .contact .row .contact .title {
     text-transform: uppercase;
-    color: #fff;
+    color: var(--branco);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -372,7 +373,7 @@ header .navbar ul li a:hover {
         font-size: 50%;
     }
 
-    .skills-data {
+    .skills-box {
         width: 180%;
     }
 
@@ -388,7 +389,7 @@ header .navbar ul li a:hover {
     }
 
 
-    .skills-data {
+    .skills-box {
         width: 150%;
     }
 }
