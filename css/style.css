@@ -218,44 +218,45 @@ header .navbar ul li a:hover {
     padding: 0 .5rem;
 }
 
-
-
-.skills .row {
+.skills .box-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
 }
 
-/* Retangulo que tem dentro as habilidades */
+/* box (Retangulo) que tem dentro as habilidades */
 .skills-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:inline-flex; /* deixai dentro do flex na mesma linha. */
+    justify-content: center; /* vai deixar o icon no meio */
     position: relative;
-    height: 5rem;
-    width: 60rem;
-    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+    font-size: 1.5rem;
     padding: .5rem 1rem;
     margin: 2rem;
     border-radius: .5rem;
     color: #eee;
     background-color: #333;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.skills .row .skills-box .names .skills-icon {
-    font-size: 2.3rem;
-    margin-right: 1rem;
+.skills-box:hover {
+    transform: scale(1.2);
+}
+
+.skills .box-container .skills-box .names i {
+    font-size: 4rem;
     color: var(--azul);
 }
 
-.skills .row .skills-box .names {
+.skills .box-container .skills-box span {
+    flex-direction: column;
     display: flex;
-    align-items: center;
+    padding: 1rem;
 }
-
 
 .portfolio .box-container {
     display: flex;
@@ -372,11 +373,6 @@ header .navbar ul li a:hover {
     html {
         font-size: 50%;
     }
-
-    .skills-box {
-        width: 180%;
-    }
-
 }
 
 @media (max-width:400px) {
@@ -386,10 +382,5 @@ header .navbar ul li a:hover {
 
     .heading {
         margin: 0 3rem;
-    }
-
-
-    .skills-box {
-        width: 150%;
     }
 }
