@@ -288,10 +288,11 @@ header .navbar ul li a:hover {
 }
 
 .portfolio a {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: .3rem;
 }
 
 
