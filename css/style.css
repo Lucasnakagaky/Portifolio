@@ -3,6 +3,11 @@
 :root {
     --azul: #45f3ff;
     --branco: #fff;
+    --html: #db0000;
+    --css: #25A9F0;
+    --javascript: #ffff00;
+    --boostrap: #563d7c;
+    --react: #61dafb;
 }
 
 * {
@@ -226,8 +231,10 @@ header .navbar ul li a:hover {
 
 /* box (Retangulo) que tem dentro as habilidades */
 .skills-box {
-    display:inline-flex; /* deixai dentro do flex na mesma linha. */
-    justify-content: center; /* vai deixar o icon no meio */
+    display: inline-flex;
+    /* deixai dentro do flex na mesma linha. */
+    justify-content: center;
+    /* vai deixar o icon no meio */
     position: relative;
     text-align: center;
     align-items: center;
@@ -247,9 +254,29 @@ header .navbar ul li a:hover {
     transform: scale(1.2);
 }
 
-.skills .box-container .skills-box .names i {
+.skills .box-container .skills-box .names .html {
     font-size: 4rem;
-    color: var(--azul);
+    color: var(--html);
+}
+
+.skills .box-container .skills-box .names .css {
+    font-size: 4rem;
+    color: var(--css);
+}
+
+.skills .box-container .skills-box .names .js {
+    font-size: 4rem;
+    color: var(--javascript);
+}
+
+.skills .box-container .skills-box .names .bootstrap {
+    font-size: 4rem;
+    color: var(--boostrap);
+}
+
+.skills .box-container .skills-box .names .react {
+    font-size: 4rem;
+    color: var(--react);
 }
 
 .skills .box-container .skills-box span {
@@ -288,7 +315,7 @@ header .navbar ul li a:hover {
 }
 
 .portfolio a {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
