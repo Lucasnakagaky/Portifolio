@@ -1,3 +1,25 @@
+
+/* Estilização com CSS */
+
+window.sr = ScrollReveal({
+  reset: true,
+});
+
+/* Sobre */
+sr.reveal(".heading", { origin: "top", distance: "80px", duration: 2000 });
+sr.reveal(".info", { origin: "top", distance: "80px", duration: 3000 });
+sr.reveal(".btn", { origin: "top", distance: "80px", duration: 3000 });
+
+/* Minhas habilidades */
+sr.reveal(".html_nome", {  origin: "top", distance: "80px", duration: 3000 });
+sr.reveal(".css_nome", {  origin: "top", distance: "80px", duration: 4000 });
+sr.reveal(".js_nome", {  origin: "top", distance: "80px", duration: 5000 });
+sr.reveal(".bootstrap_nome", { origin: "top", distance: "80px",  duration: 6000 });
+sr.reveal(".react_nome", {  origin: "top", distance: "80px", duration: 7000 });
+
+/* portifolio */
+sr.reveal(".box", {  origin: "top", distance: "80px", duration: 4000 });
+
 /* Ao clicar no menu o cabeçalho vai "desaparecer" */
 $(document).ready(function () {
   $("#menu").click(function () {
@@ -29,3 +51,5 @@ $(document).ready(function () {
     );
   });
 });
+
+
