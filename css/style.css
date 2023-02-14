@@ -179,7 +179,7 @@ header .navbar ul li a:hover {
 }
 
 .home h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--branco);
 }
 
@@ -195,6 +195,12 @@ header .navbar ul li a:hover {
 .home p {
     font-size: 2rem;
     color: #eee;
+}
+
+.home .button_box {
+    padding: 1rem;
+    display: inline-flex;
+    gap: 2rem;
 }
 
 .about .row {

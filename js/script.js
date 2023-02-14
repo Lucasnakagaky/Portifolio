@@ -9,6 +9,8 @@ window.sr = ScrollReveal({
 sr.reveal(".heading", { origin: "top", distance: "80px", duration: 2000 });
 sr.reveal(".info", { origin: "top", distance: "80px", duration: 3000 });
 sr.reveal(".btn", { origin: "top", distance: "80px", duration: 3000 });
+sr.reveal("#linkedin", { origin: "top", distance: "80px", duration: 3000 });
+sr.reveal("#github", { origin: "top", distance: "80px", duration: 5000 });
 
 /* Minhas habilidades */
 sr.reveal(".html_nome", {  origin: "top", distance: "80px", duration: 3000 });
