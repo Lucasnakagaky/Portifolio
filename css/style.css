@@ -18,7 +18,7 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
+   /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -297,6 +297,13 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
+}
+
+.portfolio .vazio {
+    padding: 5rem;
+    text-align: center;
+    color: var(--branco);
+    font-size: 3rem;
 }
 
 /* espesura do box que tera a imagem */
