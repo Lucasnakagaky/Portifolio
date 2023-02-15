@@ -6,7 +6,6 @@ window.sr = ScrollReveal({
 });
 
 /* Sobre */
-sr.reveal(".heading", { origin: "top", distance: "80px", duration: 2000 });
 sr.reveal(".info", { origin: "top", distance: "80px", duration: 3000 });
 sr.reveal(".btn", { origin: "top", distance: "80px", duration: 3000 });
 sr.reveal("#linkedin", { origin: "top", distance: "80px", duration: 3000 });
