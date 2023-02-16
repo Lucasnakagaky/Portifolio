@@ -11,11 +11,7 @@ sr.reveal("#linkedin", { origin: "top", distance: "80px", duration: 3000 });
 sr.reveal("#curriculo", { origin: "top", distance: "80px", duration: 4000 });
 
 /* Minhas habilidades */
-sr.reveal(".html_nome", {  origin: "top", distance: "80px", duration: 3000 });
-sr.reveal(".css_nome", {  origin: "top", distance: "80px", duration: 4000 });
-sr.reveal(".js_nome", {  origin: "top", distance: "80px", duration: 5000 });
-sr.reveal(".bootstrap_nome", { origin: "top", distance: "80px",  duration: 6000 });
-sr.reveal(".react_nome", {  origin: "top", distance: "80px", duration: 7000 });
+sr.reveal(".box-container", {  origin: "top", distance: "80px", duration: 4000 });
 
 /* portifolio */
 sr.reveal(".box", {  origin: "top", distance: "80px", duration: 4000 });
