@@ -19,8 +19,6 @@ sr.reveal(".box-container", {
 /* portifolio */
 sr.reveal(".box", { origin: "top", distance: "80px", duration: 4000 });
 
-/* Contato */
-sr.reveal("#info", { origin: "right", distance: "100px", duration: 3000 });
 
 /* Ao clicar no menu o cabeçalho vai "desaparecer" */
 $(document).ready(function () {

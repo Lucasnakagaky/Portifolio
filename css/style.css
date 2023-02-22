@@ -8,6 +8,7 @@
     --javascript: #ffff00;
     --boostrap: #563d7c;
     --react: #61dafb;
+    --angular: #D6002F;
 }
 
 * {
@@ -283,6 +284,11 @@ header .navbar ul li a:hover {
 .skills .box-container .skills-box .names .react {
     font-size: 4rem;
     color: var(--react);
+}
+
+.skills .box-container .skills-box .names .angular {
+    font-size: 4rem;
+    color: var(--angular)
 }
 
 .skills .box-container .skills-box span {
