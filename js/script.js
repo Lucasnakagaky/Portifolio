@@ -1,4 +1,3 @@
-
 /* Estilização com CSS */
 
 window.sr = ScrollReveal({
@@ -6,15 +5,22 @@ window.sr = ScrollReveal({
 });
 
 /* Sobre */
-sr.reveal(".info", { origin: "top", distance: "80px", duration: 3000 });
+sr.reveal(".info", { origin: "top", distance: "100px", duration: 3000 });
 sr.reveal("#linkedin", { origin: "top", distance: "80px", duration: 3000 });
 sr.reveal("#curriculo", { origin: "top", distance: "80px", duration: 4000 });
 
 /* Minhas habilidades */
-sr.reveal(".box-container", {  origin: "top", distance: "80px", duration: 4000 });
+sr.reveal(".box-container", {
+  origin: "top",
+  distance: "80px",
+  duration: 4000,
+});
 
 /* portifolio */
-sr.reveal(".box", {  origin: "top", distance: "80px", duration: 4000 });
+sr.reveal(".box", { origin: "top", distance: "80px", duration: 4000 });
+
+/* Contato */
+sr.reveal("#info", { origin: "right", distance: "100px", duration: 3000 });
 
 /* Ao clicar no menu o cabeçalho vai "desaparecer" */
 $(document).ready(function () {
@@ -47,5 +53,3 @@ $(document).ready(function () {
     );
   });
 });
-
-
