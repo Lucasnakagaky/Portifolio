@@ -281,11 +281,6 @@ header .navbar ul li a:hover {
     color: var(--boostrap);
 }
 
-.skills .box-container .skills-box .names .react {
-    font-size: 4rem;
-    color: var(--react);
-}
-
 .skills .box-container .skills-box .names .angular {
     font-size: 4rem;
     color: var(--angular)
