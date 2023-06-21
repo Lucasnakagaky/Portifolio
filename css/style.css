@@ -36,7 +36,7 @@ html {
 
 /* ::-webkit-scrollbar permite modificar a aparência da barra de rolagem do navegador. */
 html ::-webkit-scrollbar {
-    width: 1.4rem;
+    width: 1rem;
 }
 
 /* ::-webkit-scrollbar-track é a faixa (barra de progresso) da barra de rolagem. */
@@ -51,8 +51,7 @@ html ::-webkit-scrollbar-thumb {
 
 body {
     background: #111;
-    overflow-x: hidden;
-    padding-left: 35rem;
+    align-items: center;
 }
 
 section {
@@ -97,55 +96,34 @@ section {
 
 /* Cabeçalho */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 100%;
-    width: 35rem;
-    background: #1a1a1a;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    text-align: center;
+    background: #1a1a1a;
+    /* background: #b93333; */
+    padding: 1rem;
 }
 
 /* Foto de perfil como estilizei */
 header .user img {
-    height: 17rem;
-    width: 17rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border: .7rem solid var(--azul);
-}
-
-header .user .name {
-    font-size: 3.5rem;
-    color: var(--branco);
-}
-
-header .user .post {
-    font-size: 2rem;
-    color: #eee;
-}
-
-header .navbar {
-    width: 100%;
+    border: .5rem solid var(--azul);
 }
 
 header .navbar ul {
+    display: flex;
     list-style: none;
-    padding: 1rem 3rem;
 }
 
 /* Botões do cabeçalho */
 header .navbar ul li a {
-    display: block;
+    display: flex;
     padding: 1rem;
-    margin: 1.5rem 0;
-    background: #333;
+    margin: 1.5rem 1rem;
     color: var(--branco);
     font-size: 2rem;
     border-radius: 5rem;
@@ -159,7 +137,7 @@ header .navbar ul li a:hover {
 
 /* Menu onde abre o cabeçalho*/
 #menu {
-    position: fixed;
+    /* position: fixed; */
     top: 2rem;
     right: 2rem;
     background: #333;
@@ -204,6 +182,8 @@ header .navbar ul li a:hover {
     gap: 2rem;
 }
 
+/* About */
+
 .about .row {
     display: flex;
     align-items: center;
@@ -229,6 +209,36 @@ header .navbar ul li a:hover {
     color: #eee;
     padding: 0 .5rem;
 }
+
+/* Experiência */
+
+.experience .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.experience .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.experience .row .info h3 {
+    font-size: 2rem;
+    color: var(--azul);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.experience .row .info h3 span {
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+/* Habilidades */
 
 .skills .box-container {
     display: flex;
@@ -274,6 +284,11 @@ header .navbar ul li a:hover {
 .skills .box-container .skills-box .names .js {
     font-size: 4rem;
     color: var(--javascript);
+}
+
+.skills .box-container .skills-box .names .Csharp {
+    height: 10rem;
+    width: 10rem;
 }
 
 .skills .box-container .skills-box .names .bootstrap {
@@ -329,7 +344,18 @@ header .navbar ul li a:hover {
     padding-top: 2rem;
     margin: .3rem;
     font-size: 1.5rem;
-    color: white;
+    color: var(--branco);
+}
+
+.footer {
+    text-align: center;
+    color: var(--branco);
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer span {
+    color: var(--azul);
 }
 
 
