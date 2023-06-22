@@ -135,17 +135,35 @@ header .navbar ul li a:hover {
     color: #1C1C1C
 }
 
-/* Menu onde abre o cabeçalho*/
-#menu {
-    /* position: fixed; */
-    top: 2rem;
-    right: 2rem;
-    background: #333;
+
+/* Mobile */
+.navbar-mobile ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    right: 1%;
+}
+
+.navbar-mobile ul li a {
+    display: flex;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
     color: var(--branco);
-    cursor: pointer;
-    font-size: 2.5rem;
-    padding: 1rem 1.5rem;
-    z-index: 1000;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile ul li a:hover {
+    background: var(--azul);
+    color: #1C1C1C
+}
+
+/* Menu onde abre o cabeçalho*/
+.icon {
     display: none;
 }
 
@@ -362,7 +380,7 @@ header .navbar ul li a:hover {
 
 /* consultas de mídia onde altera a largura quando for outros aparelhos */
 
-@media (max-width:1200px) {
+@media (max-width:1330px) {
     html {
         font-size: 55%;
     }
@@ -370,24 +388,39 @@ header .navbar ul li a:hover {
     .home {
         padding: 1rem 4rem;
     }
+
+    .navbar {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        top: 2rem;
+        right: 2rem;
+        background: #333;
+        color: var(--branco);
+        cursor: pointer;
+        font-size: 2.5rem;
+        padding: 1rem 1.5rem;
+        z-index: 1000;
+    }
+
+    .navbar-mobile ul {
+        display: block;
+    }
+    
 }
 
 /* Quando o maximo da largura for 991px ele  vai "desaparecer" com o cabeçalho */
+
 @media (max-width:991px) {
-    header {
-        left: -120%;
-    }
-
-    #menu {
-        display: block;
-    }
-
-    header.toggle {
-        left: 0%;
-    }
 
     body {
         padding: 0;
+    }
+
+    header {
+        justify-content: space-between;
     }
 }
 

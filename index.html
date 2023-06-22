@@ -15,7 +15,7 @@
   <!--- ScrollReveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <title>Portifolio Desenvolvedor Web</title>
+  <title>Portfolio Desenvolvedor Web</title>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
   <header>
     <div class="user">
       <img src="img/Lucas.png" alt="" />
+     <!--- <h3>Lucas Nakagaky</h3> -->
     </div>
     <nav class="navbar">
       <ul>
@@ -33,9 +34,24 @@
         <li><a href="#portfolio">Portfólio</a></li>
       </ul>
     </nav>
-  </header>
 
-  <div id="menu" class="fas fa-bars"></div>
+    <div class="navbar-mobile-icon">
+    <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+  </div>
+
+  </header>
+  <!-- Cabeçalho resposivo -->
+  <div class="navbar-mobile">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+    </ul>
+  </div>
+
+ 
 
   <!-- Home Seção Começa -->
   <section class="home" id="home">
@@ -77,7 +93,7 @@
     <h1 class="heading">Minhas <span>Experiência</span></h1>
     <div class="row">
       <div class="info left">
-        <h3><span>Empresa:</span>Faeg – Federação da Agricultura e Pecurária de Goiás</h3>
+        <h3><span>Empresa:</span>FAEG – Federação da Agricultura </h3>
         <h3><span>Cargo:</span>Trainee de Desenvolvimento web</h3>
         <h3><span>Período:</span>agosto/2022 até outubro/2022</h3>
         <h3><span>Atividades:</span>Desenvolvimento de software para criação de sites
@@ -89,8 +105,8 @@
         <h3><span>Cargo:</span>Estagiário de Desenvolvimento de Sistemas</h3>
         <h3><span>Período:</span>agosto/2021 até junho/2022</h3>
         <h3><span>Atividades:</span>Desenvolvimento de software para gestão
-           financeira empresarial usando as linguagens JavaScript, C# .NET, 
-           Frameworks SAPUI5 e banco de dados SQL SERVER.</h3>
+           fiscal em desktop e atualização do site de gestão usando as linguagens JavaScript, C#
+           Frameworks SAPUI5, .NET e banco de dados SQL SERVER.</h3>
       </div>
     </div>
   </section>
@@ -173,10 +189,11 @@
         <a href="https://lucasnakagaky.github.io/Projeto-em-Boostrap/" target="_blank"><img src="img/SiteEmBoostrap.PNG" alt=""/></a>
         <h4>Site em Bootstrap e JavaScript onde pude desenvolvedor habilidades em carrocel e paralax...</h4>
       </div>
-       <!-- <div class="box">
-        <img src="img/portifolio1.PNG" alt="" />
+        <div class="box">
+        <img src="img/dicas-projetos-frontend-min.png" alt="" />
+        <h4>Projeto em desenvolvimento...</h4>
       </div>
-      <div class="box">
+      <!--<div class="box">
         <img src="img/portifolio1.PNG" alt="" />
       </div> --->
     </div> 
