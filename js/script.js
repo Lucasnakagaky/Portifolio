@@ -20,18 +20,19 @@ sr.reveal(".box-container", {
 /* portifolio */
 sr.reveal(".box", { origin: "top", distance: "80px", duration: 4000 });
 
+let menuMobile = document.querySelector(".navbar-mobile");
+menuMobile.style.display = "none";
 /* funcionalidade do cabeçalho */
 function menuShow() {
   let menuMobile = document.querySelector(".navbar-mobile");
-
-
+  
   if (menuMobile.classList.contains("open")) {
     menuMobile.classList.remove("open");
-    document.querySelector(".icon").src = "/img/menu_white_36dp.svg";
+    document.querySelector(".icon").src = "/img/menu_white_36dp.png";
     menuMobile.style.display = "none";
   } else {
     menuMobile.classList.add("open");
-    document.querySelector(".icon").src = "/img/close_white_36dp.svg";
+    document.querySelector(".icon").src = "/img/close_white_36dp.png";
     menuMobile.style.display = "block";
   }
 }
