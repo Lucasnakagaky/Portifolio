@@ -37,7 +37,7 @@ function menuShow() {
   }
 }
 
-/* Rolagem suave*/
+/* Rolagem suave */
 $('a[href*="#"]').on("click", function (e) {
   e.preventDefault();
 
