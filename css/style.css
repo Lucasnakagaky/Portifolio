@@ -395,14 +395,10 @@ header .navbar ul li a:hover {
 
     .icon {
         display: block;
-        height: 6rem;
-        width: 6rem;
-        background: #333;
+        background: #1C1C1C;
         color: var(--branco);
-        cursor: pointer;
         font-size: 2.5rem;
         padding: 1rem 1.5rem;
-        z-index: 1000;
     }
 
     .navbar-mobile ul {
