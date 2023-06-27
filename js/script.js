@@ -40,7 +40,7 @@ function menuShow() {
 /* Rolagem suave */
 $('a[href*="#"]').on("click", function (e) {
   e.preventDefault();
-
+  menuMobile.style.display = "none";
   $("html, body").animate(
     {
       scrollTop: $($(this).attr("href")).offset().top,

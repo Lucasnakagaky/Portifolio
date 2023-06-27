@@ -19,7 +19,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    /* text-transform: capitalize; */
     transition: all .2s linear;
 }
 
@@ -57,6 +56,7 @@ body {
 section {
     min-height: 100vh;
     padding: 1rem;
+    /* padding: 8rem 0; */
 }
 
 /* estilização dos botões */
@@ -98,20 +98,20 @@ section {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #1a1a1a;
-    /* background: #b93333; */
-    padding: 1rem;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
 }
 
-/* Foto de perfil como estilizei */
-header .user img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: .5rem solid var(--azul);
+
+header .user {
+    font-size: 2rem;
+    color: var(--azul);
+    background: linear-gradient(to right, #274472, #5885AF);
+    padding: 1rem;
 }
 
 header .navbar ul {
@@ -216,6 +216,15 @@ header .navbar ul li a:hover {
     padding-left: 6rem;
 }
 
+/* Foto de perfil como estilizei */
+.about .row .info img {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 52% 48% 0% 100% / 50% 43% 57% 50%;
+    object-fit: cover;
+    border: .5rem solid var(--azul);
+}
+
 .about .row .info h3 {
     font-size: 2rem;
     color: var(--azul);
@@ -312,11 +321,6 @@ header .navbar ul li a:hover {
 .skills .box-container .skills-box .names .bootstrap {
     font-size: 4rem;
     color: var(--boostrap);
-}
-
-.skills .box-container .skills-box .names .angular {
-    font-size: 4rem;
-    color: var(--angular)
 }
 
 .skills .box-container .skills-box span {
@@ -417,7 +421,12 @@ header .navbar ul li a:hover {
 
     header {
         justify-content: space-between;
+        position: relative;
     }
+
+    /* section {
+        padding: 1rem;
+    }*/
 }
 
 @media (max-width:768px) {
