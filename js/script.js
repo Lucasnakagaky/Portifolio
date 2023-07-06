@@ -5,7 +5,7 @@ window.sr = ScrollReveal({
 });
 
 /* Sobre */
-sr.reveal(".info", { origin: "top", distance: "100px", duration: 3000 });
+sr.reveal(".img", { duration: 6000 });
 sr.reveal(".left", { origin: "left", distance: "100px", duration: 3000 });
 sr.reveal(".right", { origin: "right", distance: "100px", duration: 3000 });
 sr.reveal("#curriculo", { origin: "top", distance: "80px", duration: 4000 });
@@ -19,6 +19,7 @@ sr.reveal(".box-container", {
 
 /* portifolio */
 sr.reveal(".box", { origin: "top", distance: "80px", duration: 4000 });
+sr.reveal(".gitHub", { origin: "top", distance: "80px", duration: 3500 });
 
 let menuMobile = document.querySelector(".navbar-mobile");
 menuMobile.style.display = "none";
@@ -38,12 +39,14 @@ function menuShow() {
 }
 
 /* Rolagem suave */
-$('a[href*="#"]').on("click", function (e) {
+$('a[href*="#"]').click("click", function (e) {
   e.preventDefault();
   menuMobile.style.display = "none";
+  var id = $(this).attr("href");
+  targetOffset = $(id).offset().top;
   $("html, body").animate(
     {
-      scrollTop: $($(this).attr("href")).offset().top,
+      scrollTop: targetOffset,
     },
     500,
     "linear"
