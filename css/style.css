@@ -269,7 +269,7 @@ header .navbar ul li a:hover {
     margin: 2rem;
     border-radius: .5rem;
     color: #eee;
-    background-color: #333;
+    background-color: #212121;
     overflow: hidden;
     cursor: pointer;
 }
@@ -293,10 +293,7 @@ header .navbar ul li a:hover {
     color: var(--javascript);
 }
 
-.skills .box-container .skills-box .names .Csharp {
-    height: 10rem;
-    width: 10rem;
-}
+
 
 .skills .box-container .skills-box .names .bootstrap {
     font-size: 4rem;
