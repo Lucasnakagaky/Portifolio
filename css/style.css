@@ -61,7 +61,7 @@ section {
 
 /* estilização dos botões */
 .btn {
-    padding: .7rem 3rem;
+    padding: .7rem 2rem;
     background: transparent;
     color: var(--branco);
     cursor: pointer;
