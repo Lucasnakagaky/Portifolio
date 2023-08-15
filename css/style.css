@@ -250,7 +250,9 @@ header .navbar ul li a:hover {
 .skills .box-container {
     display: flex;
     padding: 1rem 0;
-    padding-left: 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 /* box (Retangulo) que tem dentro as habilidades */
