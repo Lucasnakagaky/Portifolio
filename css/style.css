@@ -243,10 +243,10 @@ header .navbar ul li a:hover {
     padding-left: 6rem;
 }
 
-/* Foto de perfil como estilizei */
-.about .row .info video {
-    border-radius: 2rem;
-    width: 50rem
+.about .row .info img {
+    height: 30rem;
+    width: 60rem;
+    border-radius: 5rem;
 }
 
 .about .row .info h3 {
