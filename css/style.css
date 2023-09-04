@@ -243,9 +243,10 @@ header .navbar ul li a:hover {
     padding-left: 6rem;
 }
 
-.about .row .info video {
-    border-radius: 2rem;
-    width: 50rem
+.about .row .info img {
+    height: 50rem;
+    width: 40rem;
+    border-radius: 5rem;
 }
 
 .about .row .info h3 {
