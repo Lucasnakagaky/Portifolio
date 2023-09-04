@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -167,6 +167,7 @@ header .navbar ul li a:hover {
     display: none;
 }
 
+
 /* Home */
 .home {
     display: flex;
@@ -175,13 +176,20 @@ header .navbar ul li a:hover {
     padding: 0 15rem;
 }
 
+
+.home .row {
+    display: inline-flex;
+}
+
+
+
 .home h3 {
     font-size: 3rem;
     color: var(--branco);
 }
 
 .home h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--branco);
 }
 
@@ -190,7 +198,7 @@ header .navbar ul li a:hover {
 }
 
 .home p {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #c4c4c4;
 }
 
@@ -204,6 +212,18 @@ header .navbar ul li a:hover {
     font-size: 2rem;
 }
 
+/* Foto de perfil como estilizei */
+.home .row .info img {
+    background: linear-gradient(to right, #274472, #61dafb);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 52% 48% 0% 100% / 50% 43% 57% 50%;
+    object-fit: cover;
+    border: .5rem solid var(--azul);
+    box-shadow: 10px 10px 50px var(--azul);
+    margin-left: 15rem;
+}
+
 
 /* About */
 
@@ -213,29 +233,25 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0;
+    margin-left: 6rem;
+    margin-bottom: 10rem;
 }
 
 .about .row .info {
-    flex: 1 1 48rem;
+    flex: 1 1 50rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
 }
 
 /* Foto de perfil como estilizei */
-.about .row .info img {
-    background: linear-gradient(to right, #274472, #61dafb);
-    height: 30rem;
-    width: 30rem;
-    border-radius: 52% 48% 0% 100% / 50% 43% 57% 50%;
-    object-fit: cover;
-    border: .5rem solid var(--azul);
-    box-shadow: 10px 10px 50px var(--azul);
-    /*visibility: hidden; */
+.about .row .info video {
+    border-radius: 2rem;
+    width: 50rem
 }
 
 .about .row .info h3 {
-    font-size: 2rem;
-    color: var(--azul);
+    font-size: 1.8rem;
+    color: #eee;
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -260,10 +276,9 @@ header .navbar ul li a:hover {
     display: inline-flex;
     /* deixai dentro do flex na mesma linha. */
     justify-content: center;
-    /* vai deixar o icon no meio */
-    position: relative;
     text-align: center;
     align-items: center;
+    position: relative;
     height: 11rem;
     width: 11rem;
     font-size: 1.5rem;
@@ -301,6 +316,11 @@ header .navbar ul li a:hover {
     color: var(--boostrap);
 }
 
+.skills .box-container .skills-box .names .react {
+    font-size: 4rem;
+    color: var(--react);
+}
+
 .skills .box-container .skills-box span {
     flex-direction: column;
     display: flex;
@@ -309,8 +329,9 @@ header .navbar ul li a:hover {
 
 .portfolio .box-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*  align-items: center;
+    justify-content: center; */
+    margin-left: 10rem;
     flex-wrap: wrap;
     padding: 2rem 0;
 }
@@ -407,6 +428,16 @@ header .navbar ul li a:hover {
     header {
         justify-content: space-between;
         position: relative;
+    }
+
+    .home .row {
+        display: block;
+        margin: 0;
+    }
+
+    .home .row .info img {
+        margin-left: 0;
+
     }
 
     /* section {
