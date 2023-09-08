@@ -270,6 +270,25 @@ dotlottie-player {
 
 /* Habilidades */
 
+
+
+.skills .parallax {
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url(/img/pexels-grabowska.jpg);
+}
+
+
+
 .skills .box-container {
     display: flex;
     padding: 1rem 0;
@@ -293,7 +312,7 @@ dotlottie-player {
     margin: 2rem;
     border-radius: .5rem;
     color: #eee;
-    background-color: #1a1a2b;
+    background-color: #010101;
     overflow: hidden;
     cursor: pointer;
 }
