@@ -168,7 +168,6 @@ header .navbar ul li a:hover {
     display: none;
 }
 
-
 /* Home */
 .home {
     display: flex;
@@ -177,12 +176,9 @@ header .navbar ul li a:hover {
     padding: 0 15rem;
 }
 
-
 .home .row {
     display: inline-flex;
 }
-
-
 
 .home h3 {
     font-size: 3rem;
@@ -244,7 +240,6 @@ dotlottie-player {
 }
 
 .about .row .info img {
-
     background: linear-gradient(to right, #274472, #61dafb);
     height: 35rem;
     width: 35rem;
@@ -269,9 +264,6 @@ dotlottie-player {
 }
 
 /* Habilidades */
-
-
-
 .skills .parallax {
     height: 100vh !important;
     width: 100%;
@@ -284,10 +276,8 @@ dotlottie-player {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-image: url(/img/pexels-grabowska.jpg);
+    background-image: url(../img/pexels-grabowska.jpg);
 }
-
-
 
 .skills .box-container {
     display: flex;
