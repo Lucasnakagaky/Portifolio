@@ -219,11 +219,9 @@ header .navbar ul li a:hover {
 }
 
 /* Foto de perfil como estilizei */
-.home .row .info img {
-    height: 50rem;
-    width: 40rem;
-    border-radius: 5rem;
-    margin-left: 10rem;
+dotlottie-player {
+    width: 70%;
+    height: 100%;
 }
 
 
@@ -246,7 +244,6 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info img {
-
 
     background: linear-gradient(to right, #274472, #61dafb);
     height: 35rem;
@@ -465,8 +462,9 @@ header .navbar ul li a:hover {
         margin-left: -5rem;
     }
 
-     dotlottie-player{
-        display: none;
+    dotlottie-player {
+        width: 40rem;
+        height: 40rem;
     }
 
     /* section {
