@@ -5,6 +5,7 @@ window.sr = ScrollReveal({
 });
 
 /* Sobre */
+sr.reveal(".info img", { origin: "top", distance: "100px", duration: 3000 });
 sr.reveal(".left", { origin: "left", distance: "100px", duration: 3000 });
 sr.reveal(".right", { origin: "right", distance: "100px", duration: 3000 });
 sr.reveal("#curriculo", { origin: "top", distance: "80px", duration: 4000 });
