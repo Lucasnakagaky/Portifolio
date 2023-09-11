@@ -276,7 +276,7 @@ dotlottie-player {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-image: url(../img/pexels-grabowska.jpg);
+    background-image: url(../img/pxfuel\ \(2\).jpg);
 }
 
 .skills .box-container {
@@ -302,7 +302,7 @@ dotlottie-player {
     margin: 2rem;
     border-radius: .5rem;
     color: #eee;
-    background-color: #010101;
+    background-color: transparent;
     overflow: hidden;
     cursor: pointer;
 }
@@ -310,6 +310,7 @@ dotlottie-player {
 .skills-box:hover {
     transform: scale(1.2);
     border: .1rem solid #56568c;
+    background-color: #13131F;
 }
 
 .skills .box-container .skills-box .names .html {
