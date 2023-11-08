@@ -8,7 +8,8 @@
     --javascript: #ffff00;
     --boostrap: #563d7c;
     --react: #61dafb;
-    --angular: #D6002F;
+    --wordpress: #1B769C;
+    --elementor: #FFC5F3;
 }
 
 * {
@@ -264,20 +265,6 @@ dotlottie-player {
 }
 
 /* Habilidades */
-.skills .parallax {
-    height: 100vh !important;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-image: url(../img/pxfuel\ \(2\).jpg);
-}
 
 .skills .box-container {
     display: flex;
@@ -336,6 +323,16 @@ dotlottie-player {
 .skills .box-container .skills-box .names .react {
     font-size: 4rem;
     color: var(--react);
+}
+
+.skills .box-container .skills-box .names .wordpress {
+    font-size: 4rem;
+    color: var(--wordpress);
+}
+
+.skills .box-container .skills-box .names .elementor {
+    font-size: 4rem;
+    color: var(--elementor);
 }
 
 .skills .box-container .skills-box span {
