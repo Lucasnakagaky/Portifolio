@@ -212,7 +212,7 @@ header .navbar ul li a:hover {
 
 .home .row .info {
     padding-top: 10rem;
-    width: 60rem;
+    width: 65rem;
 }
 
 /* Foto de perfil como estilizei */
@@ -237,7 +237,7 @@ dotlottie-player {
 .about .row .info {
     flex: 1 1 48rem;
     padding: 2rem 1rem;
-    padding-left: 6rem;
+    padding-left: 3rem;
 }
 
 .about .row .info img {
@@ -282,7 +282,7 @@ dotlottie-player {
     text-align: center;
     align-items: center;
     position: relative;
-    height: 11rem;
+    height: 15rem;
     width: 11rem;
     font-size: 1.5rem;
     padding: .5rem 1rem;
