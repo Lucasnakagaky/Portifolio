@@ -367,7 +367,7 @@ dotlottie-player {
 }
 
 /* faz a imagem se mover */
-.portfolio .box-container .box:hover img {
+.portfolio .box-container .box img:hover {
     transform: scale(1.2);
 }
 
