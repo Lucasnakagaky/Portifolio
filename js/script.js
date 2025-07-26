@@ -11,11 +11,18 @@ sr.reveal(".right", { origin: "right", distance: "100px", duration: 3000 });
 sr.reveal("#curriculo", { origin: "top", distance: "80px", duration: 4000 });
 
 /* Minhas habilidades */
-sr.reveal(".box-container", {
-  origin: "top",
-  distance: "80px",
-  duration: 4000,
-});
+function aplicarScrollReveal() {
+  
+    sr.reveal(".box-container", {
+      origin: "top",
+      distance: "80px",
+      duration: 4000,
+    });
+  
+}
+aplicarScrollReveal();
+window.addEventListener("resize", aplicarScrollReveal);
+
 
 /* portifolio */
 sr.reveal(".box", { origin: "top", distance: "80px", duration: 4000 });
